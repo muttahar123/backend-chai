@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "node"
@@ -14,7 +14,9 @@
   "author": "Muttahar sheikh",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "mongoose": "^8.16.3",
     "prettier": "^3.6.2"
   },
   "devDependencies": {
